@@ -30,10 +30,11 @@ Auto Scaling Group (2-4 x t3.micro), Route 53, ACM (HTTPS).
 
 ## Tests
 - **High availability:** terminated a running server — Auto Scaling replaced it automatically and the site stayed online.
-- **Scalability:** sent traffic from AWS CloudShell — the group scaled out beyond the base 2 instances, then scaled back in after the load stopped.
+- **Scalability:** sent traffic from AWS CloudShell — the group scaled out from 2 to 4 instances under load, then scaled back in to 2 after the load stopped.
 
-## Demo video
-[Watch the demo](your-video-link)
+## Demo videos
+- [Highly available & auto-scaling website](https://www.youtube.com/watch?v=zZqw2n38gPo)
+- [Live site on my custom domain with HTTPS](https://youtu.be/EOsxDs6rOco)
 
 ## What I learned
 - How a VPC fits together: public vs private subnets, route tables, Internet Gateway vs NAT Gateway.
@@ -44,4 +45,4 @@ Auto Scaling Group (2-4 x t3.micro), Route 53, ACM (HTTPS).
 Built and deleted on the same day to keep costs low; total cost about $1-3.
 
 ---
-Built as part of the Edversity Cloud Engineering Program.# -aws-highly-available-website
+Built as part of the Edversity Cloud Engineering Program.
